@@ -1,18 +1,32 @@
-<!-- home-page.component.html -->
-<header class="bg-gray-800 text-white">
-  <nav class="container mx-auto flex items-center justify-between py-4">
-    <a href="#" class="text-xl font-bold">Meu Portfólio</a>
-    <ul class="flex space-x-4">
-      <li><a href="#" class="hover:text-gray-300">Sobre</a></li>
-      <li><a href="#" class="hover:text-gray-300">Projetos</a></li>
-      <li><a href="#" class="hover:text-gray-300">Contato</a></li>
-    </ul>
-  </nav>
-</header>
+<body [class.bg-black]="isDarkMode" [class.bg-white]="!isDarkMode" [class.text-white]="isDarkMode" [class.text-black]="!isDarkMode">
+  <header>
+    <nav class="container mx-auto flex items-center justify-between py-4">
+      <a href="#" class="text-xl font-bold">wisch.dev</a>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="hover:text-gray-300">Sobre</a></li>
+        <li><a href="#" class="hover:text-gray-300">Currículo</a></li>
+        <li><a href="#" class="hover:text-gray-300">Contato</a></li>
+      </ul>
+      <label class="relative inline-flex items-center cursor-pointer">
+        <input (change)="toggleDarkMode()" class="sr-only peer" value="" type="checkbox" />
+        <div [class.peer-checked]="isDarkMode"
+          class="w-24 h-12 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️'] before:absolute before:h-10 before:w-10 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full shadow-lg shadow-gray-400 peer-checked:shadow-lg peer-checked:shadow-gray-700 peer-checked:bg-[#383838] after:content-['🌑'] after:absolute after:bg-[#1d1d1d] after:rounded-full after:top-[4px] after:right-1 after:translate-y-full after:w-10 after:h-10 after:opacity-0 after:transition-all after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-180 peer-checked:after:translate-y-0">
+        </div>
+      </label>
+    </nav>
+  </header>
 
-<main class="container mx-auto mt-8">
-  <section class="text-center">
-    <h1 class="text-4xl font-bold mb-4">Bem-vindo ao Meu Portfólio</h1>
-    <p class="text-lg text-gray-700">Apresentando meus projetos e habilidades como desenvolvedor Fullstack.</p>
-  </section>
-</main>
+  <main class="container mx-auto flex items-center justify-center h-screen">
+    <section class="w-3/5 flex flex-col items-center mb-60">
+      <div class="w-full flex justify-between">
+        <div class="w-1/2">
+          <h2 class="text-3xl font-semibold mb-4">Desenvolvedor FullStack 👋🏻</h2>
+          <p class="text-lg text-gray-600 dark:text-gray-400">Olá, me chamo Matheus Wisch Silva. Um apaixonado desenvolvedor residente na Bahia, Brasil. 📍</p>
+        </div>
+        <div class="w-1/2 rounded-lg overflow-hidden border-4 border-blue-500">
+          <img src="caminho_da_sua_imagem.jpg" alt="Sua foto" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
