@@ -1,4 +1,6 @@
-<body [class.bg-black]="isDarkMode" [class.bg-white]="!isDarkMode" [class.text-white]="isDarkMode" [class.text-black]="!isDarkMode">
+<body [class.bg-black]="isDarkMode" [class.bg-white]="!isDarkMode" [class.text-white]="isDarkMode"
+  [class.text-black]="!isDarkMode">
+  <div class="container mx-auto max-w-screen-lg">
   <header>
     <nav class="container mx-auto flex items-center justify-between py-4">
       <a href="#" class="text-xl font-bold">wisch.dev</a>
@@ -17,16 +19,20 @@
   </header>
 
   <main class="container mx-auto flex items-center justify-center h-screen">
-    <section class="w-3/5 flex flex-col items-center mb-60">
-      <div class="w-full flex justify-between">
-        <div class="w-1/2">
-          <h2 class="text-3xl font-semibold mb-4">Desenvolvedor FullStack 👋🏻</h2>
-          <p class="text-lg text-gray-600 dark:text-gray-400">Olá, me chamo Matheus Wisch Silva. Um apaixonado desenvolvedor residente na Bahia, Brasil. 📍</p>
+    <section class="w-4/5 flex flex-col items-center mb-60">
+      <div class="w-full flex justify-between gap-11">
+        <div class="w-1/2 flex items-center">
+          <div class="flex flex-col">
+            <h2 class="text-3xl font-semibold mb-4">Desenvolvedor FullStack 👋🏻</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Olá, me chamo Matheus Wisch Silva. Um apaixonado
+              desenvolvedor residente na Bahia, Brasil. 📍</p>
+          </div>
         </div>
-        <div class="w-1/2 rounded-lg overflow-hidden border-4 border-blue-500">
-          <img src="caminho_da_sua_imagem.jpg" alt="Sua foto" class="w-full h-full object-cover">
+        <div class="w-1/2">
+          <app-profile-icon></app-profile-icon>
         </div>
       </div>
     </section>
   </main>
+  </div>
 </body>
