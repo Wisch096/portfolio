@@ -1,4 +1,3 @@
-/* home-page.component.css (ou arquivo de estilos global) */
 button:focus {
     outline: none;
   }
@@ -6,7 +5,7 @@ button:focus {
   button:hover .w-6 {
     transform: scale(1.1);
   }
-  
+
 
   .dark-fill-current path {
     fill: white; /* Altere para a cor desejada */
