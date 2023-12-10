@@ -6,7 +6,6 @@ button:focus {
     transform: scale(1.1);
   }
 
-
   .dark-fill-current path {
     fill: white;
   }
