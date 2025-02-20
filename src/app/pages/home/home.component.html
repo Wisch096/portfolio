@@ -2,8 +2,8 @@
   <div class="w-4/5 flex justify-between">
     <div class="w-1/2 flex items-center">
       <div class="flex flex-col">
-        <h2 class="text-3xl font-semibold mb-4">Desenvolvedor FullStack 👋🏻</h2>
-        <p class="text-lg text-gray-600 dark:text-gray-400">Olá! Eu sou Matheus Wisch Silva, um eterno aprendiz. 💻🌟</p>
+        <h2 class="text-3xl font-semibold mb-4">{{ 'FULLSTACK_DEVELOPER' | translate }} 👋🏻</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400">{{ 'HELLO' | translate }} 💻🌟</p>
         <div class="flex flex-row gap-3 pt-4">
           <a href="https://github.com/Wisch096" target="_blank" rel="noopener noreferrer">
             <img *ngIf="isDarkMode" src="../assets/github_claro.svg" alt="" class="w-8 h-8">
@@ -21,30 +21,31 @@
     </div>
   </div>
 </section>
-<section class="py-16 flex flex-col">
+
+<section class="pb-16 flex flex-col">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-semibold text-center mb-8">Minha Carreira</h2>
+    <h2 class="text-3xl font-semibold text-center mb-8">{{ 'CAREER' | translate }}</h2>
     <div class="max-w-2xl mx-auto">
       <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
-        Os últimos 10 anos foram extremamente intensos. Passei por várias empresas e projetos que impactaram milhões de pessoas. Comecei a trabalhar oficialmente aos 14 anos de idade como Jovem Aprendiz e dediquei cada segundo livre a estudar e me qualificar profissionalmente.
+        {{ 'CAREER_DESCRIPTION' | translate }}
       </p>
       <div class="space-y-8">
         <div>
-          <h3 class="text-2xl font-semibold">2024 - EadTech - Desenvolvedor de Software Junior III</h3>
+          <h3 class="text-2xl font-semibold">2024 - EadTech 🇧🇷 - {{ 'ROLE_1' | translate }}</h3>
           <p class="text-lg text-gray-600 dark:text-gray-400">
-            Atualmente trabalho como Desenvolvedor Sênior em Montreal, QC e opero a Escola Congenial.
+            {{ 'ROLE_1_DESCRIPTION' | translate }}
           </p>
         </div>
         <div>
-          <h3 class="text-2xl font-semibold">2023 - Conceito Tecnologia - Desenvolvedor de Software Junior</h3>
+          <h3 class="text-2xl font-semibold">2023 - Conceito Tecnologia 🇧🇷 - {{ 'ROLE_2' | translate }}</h3>
           <p class="text-lg text-gray-600 dark:text-gray-400">
-            Assumi a posição de CTO na MobApps e consegui a primeira oportunidade internacional aqui no Canadá.
+            {{ 'ROLE_2_DESCRIPTION' | translate }}
           </p>
         </div>
         <div>
-          <h3 class="text-2xl font-semibold">2022 - TopSoft Informática - Desenvolvedor de Software Junior</h3>
+          <h3 class="text-2xl font-semibold">2022 - TopSoft Informática 🇧🇷 - {{ 'ROLE_3' | translate }}</h3>
           <p class="text-lg text-gray-600 dark:text-gray-400">
-            Iniciei o curso de Ciência da Computação e tive o meu primeiro contato com a maratona de programação. Pausei o curso em 2019 para trabalhar como Desenvolvedor Android no Canadá.
+            {{ 'ROLE_3_DESCRIPTION' | translate }}
           </p>
         </div>
       </div>

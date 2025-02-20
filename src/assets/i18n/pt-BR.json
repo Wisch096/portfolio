@@ -3,6 +3,14 @@
     "ABOUT": "Sobre",
     "RESUME": "Currículo",
     "CONTACT": "Contato",
-    "FULLSTACK_DEVELOPER": "Desenvolvedor FullStack 👋🏻",
-    "HELLO": "Olá! Eu sou Matheus Wisch Silva, um eterno aprendiz. 💻🌟"
+    "FULLSTACK_DEVELOPER": "Desenvolvedor FullStack",
+    "HELLO": "Olá! Eu sou Matheus Wisch Silva, um eterno aprendiz.",
+    "CAREER": "Minha Carreira",
+    "CAREER_DESCRIPTION": "Desenvolvedor FullStack com experiência em modernização de sistemas legados, otimização de desempenho e alta demanda de usuários.",
+    "ROLE_1": "Desenvolvedor FullStack Junior III",
+    "ROLE_1_DESCRIPTION": "Trabalho com um LMS, lidando com milhões de usuários e modernizando sistemas para tecnologias mais performáticas.",
+    "ROLE_2": "Desenvolvedor FullStack Junior",
+    "ROLE_2_DESCRIPTION": "Atuei na sustentação e otimização de sistemas, reduzindo erros e melhorando a estabilidade das aplicações.",
+    "ROLE_3": "Desenvolvedor FullStack Junior",
+    "ROLE_3_DESCRIPTION": "Participei da migração de sistemas legados para C# e Angular, melhorando o desempenho e reduzindo custos de infraestrutura."
   }
