@@ -1,9 +1,17 @@
 <nav class="container mx-auto flex items-center justify-between py-4">
-    <a href="#" class="text-xl font-bold">wisch.dev</a>
-    <ul class="flex space-x-4">
-      <li><a href="#" class="hover:text-gray-300">Sobre</a></li>
-      <li><a href="#" class="hover:text-gray-300">Currículo</a></li>
-      <li><a href="#" class="hover:text-gray-300">Contato</a></li>
-    </ul>
+  <a href="#" class="text-xl font-bold">{{ 'WELCOME' | translate }}</a>
+  <ul class="flex space-x-4">
+    <li><a href="#" class="hover:text-gray-300">{{ 'ABOUT' | translate }}</a></li>
+    <li><a href="#" class="hover:text-gray-300">{{ 'RESUME' | translate }}</a></li>
+    <li><a href="#" class="hover:text-gray-300">{{ 'CONTACT' | translate }}</a></li>
+  </ul>
+  <div class="flex items-center space-x-4">
     <app-theme-toggle (themeChanged)="onThemeChanged($event)"></app-theme-toggle>
-  </nav>
+    <button (click)="changeLanguage('pt-BR')" class="px-4 py-2 bg-blue-500 text-white rounded">
+      PT
+    </button>
+    <button (click)="changeLanguage('en-US')" class="px-4 py-2 bg-blue-500 text-white rounded">
+      EN
+    </button>
+  </div>
+</nav>

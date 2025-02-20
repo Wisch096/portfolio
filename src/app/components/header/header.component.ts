@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { TranslationService } from 'src/app/services/translation.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,14 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class HeaderComponent {
   @Output() themeChanged = new EventEmitter<boolean>();
 
+  constructor(private translationService: TranslationService) {
+  }
+
   onThemeChanged(isDarkMode: boolean) {
     this.themeChanged.emit(isDarkMode); 
+  }
+
+  changeLanguage(language: string) {
+    this.translationService.changeLanguage(language);
   }
 }

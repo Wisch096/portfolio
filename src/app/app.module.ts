@@ -7,7 +7,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './components/header/header.component';
 import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.component';
 import { HomeComponent } from './pages/home/home.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -16,12 +22,20 @@ import { HomeComponent } from './pages/home/home.component';
     HeaderComponent,
     ThemeToggleComponent,
     HomeComponent,
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+      defaultLanguage: 'pt-BR', // Idioma padrão
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
