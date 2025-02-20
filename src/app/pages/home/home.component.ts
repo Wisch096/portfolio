@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectorRef } from '@angular/core';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   isDarkMode = false;
+
+  constructor(
+    private themeService: ThemeService,
+    private cdr: ChangeDetectorRef
+  ) {
+    this.themeService.isDarkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+      this.cdr.detectChanges(); 
+    });
+  }
 }
