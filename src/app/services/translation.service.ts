@@ -8,7 +8,7 @@ export class TranslationService {
   private currentLanguage: string;
 
   constructor(private translate: TranslateService) {
-    this.currentLanguage = localStorage.getItem('userLanguage') || 'pt-BR';
+    this.currentLanguage = localStorage.getItem('userLanguage') || 'en-US';
     this.translate.setDefaultLang(this.currentLanguage);
     this.translate.use(this.currentLanguage); 
   }

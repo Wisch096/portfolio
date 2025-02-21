@@ -1,52 +1,58 @@
 <section class="pb-16">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-semibold text-center mb-8">{{ 'PROJECTS' | translate }}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-       
-        <div class="rounded-lg shadow-lg overflow-hidden border dark:border-white border-black">
-          <img src="../assets/teste_projetos_pessoais.png" alt="Project 1" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Projeto 1</h3>
-            <p class="text-gray-600 dark:text-gray-400">
-              Descrição breve do projeto 1. Aqui você pode adicionar detalhes sobre o que foi feito.
-            </p>
-            <a href="https://github.com/Wisch096/portfolio" target="_blank" rel="noopener noreferrer" class="flex items-center mt-4 space-x-2">
-              <img *ngIf="isDarkMode" src="../assets/github_claro.svg" alt="" class="w-8 h-8">
-              <img *ngIf="!isDarkMode" src="../assets/github_dark.svg" alt="" class="w-8 h-8">
-              <span class="text-sm font-medium">Repositório</span>
-            </a>
-          </div>
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-semibold text-center mb-8">{{ 'PROJECTS' | translate }}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div
+        class="rounded-lg shadow-lg overflow-hidden border dark:border-white border-black transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:opacity-90">
+        <img src="../assets/teste_projetos_pessoais.png" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">{{ 'PROJECT_1' | translate }}</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            {{ 'PROJECT_1_DESC' | translate }}
+          </p>
+          <a href="https://github.com/Wisch096/portfolio" target="_blank" rel="noopener noreferrer"
+            class="flex items-center mt-4 space-x-2 dark:border-white border-2 rounded-lg p-2 hover:border-gray-600">
+            <img *ngIf="isDarkMode" src="../assets/github_claro.svg" alt="" class="w-8 h-8">
+            <img *ngIf="!isDarkMode" src="../assets/github_dark.svg" alt="" class="w-8 h-8">
+            <span class="text-sm font-medium">{{ 'REPOSITORY' | translate }}</span>
+          </a>
         </div>
-  
-        <div class="rounded-lg shadow-lg overflow-hidden border dark:border-white border-black">
-          <img src="../assets/teste_projetos_pessoais.png" alt="Project 2" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Projeto 2</h3>
-            <p class="text-gray-600 dark:text-gray-400">
-              Descrição breve do projeto 2. Aqui você pode adicionar detalhes sobre o que foi feito.
-            </p>
-            <a href="https://github.com/Wisch096/portfolio" target="_blank" rel="noopener noreferrer" class="flex items-center mt-4 space-x-2">
-              <img *ngIf="isDarkMode" src="../assets/github_claro.svg" alt="" class="w-8 h-8">
-              <img *ngIf="!isDarkMode" src="../assets/github_dark.svg" alt="" class="w-8 h-8">
-              <span class="text-sm font-medium">Repositório</span>
-            </a>
-          </div>
+      </div>
+
+      <div
+        class="rounded-lg shadow-lg overflow-hidden border dark:border-white border-black transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:opacity-90">
+        <img src="../assets/teste_projetos_pessoais.png" alt="Project 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">{{ 'PROJECT_2' | translate }}</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            {{ 'PROJECT_2_DESC' | translate }}
+          </p>
+          <a href="https://github.com/Wisch096/portfolio" target="_blank" rel="noopener noreferrer"
+            class="flex items-center mt-4 space-x-2 dark:border-white border-2 rounded-lg p-2 hover:border-gray-600">
+            <img *ngIf="isDarkMode" src="../assets/github_claro.svg" alt="" class="w-8 h-8">
+            <img *ngIf="!isDarkMode" src="../assets/github_dark.svg" alt="" class="w-8 h-8">
+            <span class="text-sm font-medium">{{ 'REPOSITORY' | translate }}</span>
+          </a>
         </div>
-  
-        <div class="rounded-lg shadow-lg overflow-hidden border dark:border-white border-black">
-          <img src="../assets/teste_projetos_pessoais.png" alt="Project 3" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Projeto 3</h3>
-            <p class="text-gray-600 dark:text-gray-400">
-              Descrição breve do projeto 3. Aqui você pode adicionar detalhes sobre o que foi feito.
-            </p>
-            <a href="https://github.com/Wisch096/portfolio" target="_blank" rel="noopener noreferrer" class="flex items-center mt-4 space-x-2">
-              <img *ngIf="isDarkMode" src="../assets/github_claro.svg" alt="" class="w-8 h-8">
-              <img *ngIf="!isDarkMode" src="../assets/github_dark.svg" alt="" class="w-8 h-8">
-              <span class="text-sm font-medium">Repositório</span>
-            </a>
-          </div>
+      </div>
+
+      <div
+        class="rounded-lg shadow-lg overflow-hidden border dark:border-white border-black transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:opacity-90">
+        <img src="../assets/teste_projetos_pessoais.png" alt="Project 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">{{ 'PROJECT_3' | translate }}</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            {{ 'PROJECT_3_DESC' | translate }}
+          </p>
+          <a href="https://github.com/Wisch096/portfolio" target="_blank" rel="noopener noreferrer"
+            class="flex items-center mt-4 space-x-2 dark:border-white border-2 rounded-lg p-2 hover:border-gray-600">
+            <img *ngIf="isDarkMode" src="../assets/github_claro.svg" alt="" class="w-8 h-8">
+            <img *ngIf="!isDarkMode" src="../assets/github_dark.svg" alt="" class="w-8 h-8">
+            <span class="text-sm font-medium">{{ 'REPOSITORY' | translate }}</span>
+          </a>
         </div>
       </div>
     </div>
+  </div>
 </section>

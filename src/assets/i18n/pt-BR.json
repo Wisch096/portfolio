@@ -13,5 +13,12 @@
     "ROLE_2_DESCRIPTION": "Atuei na sustentação e otimização de sistemas, reduzindo erros e melhorando a estabilidade das aplicações.",
     "ROLE_3": "Desenvolvedor FullStack Junior",
     "ROLE_3_DESCRIPTION": "Participei da migração de sistemas legados para C# e Angular, melhorando o desempenho e reduzindo custos de infraestrutura.",
-    "PROJECTS": "Projetos Pessoais"
+    "PROJECTS": "Projetos",
+    "PROJECT_1": "Projeto 1",
+    "PROJECT_1_DESC": "Descrição breve do Projeto 1. Aqui você pode adicionar detalhes sobre o que foi feito.",
+    "PROJECT_2": "Projeto 2",
+    "PROJECT_2_DESC": "Descrição breve do Projeto 2. Aqui você pode adicionar detalhes sobre o que foi feito.",
+    "PROJECT_3": "Projeto 3",
+    "PROJECT_3_DESC": "Descrição breve do Projeto 3. Aqui você pode adicionar detalhes sobre o que foi feito.",
+    "REPOSITORY": "Repositório"
   }

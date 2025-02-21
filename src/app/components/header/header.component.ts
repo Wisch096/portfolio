@@ -10,8 +10,7 @@ export class HeaderComponent {
   @Output() themeChanged = new EventEmitter<boolean>();
   isEnglish = false; 
 
-  constructor(private translationService: TranslationService) {
-  }
+  constructor(private translationService: TranslationService) { }
 
   onThemeChanged(isDarkMode: boolean) {
     this.themeChanged.emit(isDarkMode); 
@@ -19,7 +18,7 @@ export class HeaderComponent {
 
   onToggleChanged(isChecked: boolean) {
     this.isEnglish = isChecked;
-    const language = isChecked ? 'en-US' : 'pt-BR'; // Define o idioma com base no toggle
+    let language = isChecked ? 'pt-BR' : 'en-US';
     this.translationService.changeLanguage(language);
   }
 }
