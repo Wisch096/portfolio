@@ -13,6 +13,12 @@
             <img *ngIf="isDarkMode" src="../assets/linkedin_claro.svg" alt="" class="w-8 h-8">
             <img *ngIf="!isDarkMode" src="../assets/linkedin_escuro.svg" alt="" class="w-8 h-8">
           </a>
+          <a href="/caminho/para/seu/curriculo.pdf" download="Curriculo_Matheus_Wisch.pdf" class="flex items-center gap-2 px-4 py-2 rounded-lg transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+            </svg>
+            <span class="text-black dark:text-white">{{ 'DOWNLOAD_CV' | translate }}</span>
+          </a>
         </div>
       </div>
     </div>
