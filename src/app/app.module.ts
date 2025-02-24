@@ -12,6 +12,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ToggleSwitchComponent } from './components/toggle-switch/toggle-switch.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -26,6 +27,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     ToggleSwitchComponent,
     ProjectsComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
