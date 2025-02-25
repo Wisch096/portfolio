@@ -1,9 +1,8 @@
 <nav class="container mx-auto flex items-center justify-between py-4">
   <a href="#" class="text-xl font-bold">wisch.dev</a>
   <ul class="flex space-x-4">
-    <li><a href="#" class="hover:text-gray-300">{{ 'ABOUT' | translate }}</a></li>
     <li><a href="/blog" class="hover:text-gray-300">{{ 'Blog' | translate }}</a></li>
-    <li><a href="#" class="hover:text-gray-300">{{ 'CONTACT' | translate }}</a></li>
+    <li><a href="#contact" class="hover:text-gray-300">{{ 'CONTACT' | translate }}</a></li>
   </ul>
   <div class="flex items-center space-x-4">
     <app-theme-toggle (themeChanged)="onThemeChanged($event)"></app-theme-toggle>

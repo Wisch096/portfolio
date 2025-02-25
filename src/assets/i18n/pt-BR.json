@@ -20,5 +20,11 @@
     "PROJECT_2_DESC": "Descrição breve do Projeto 2. Aqui você pode adicionar detalhes sobre o que foi feito.",
     "PROJECT_3": "Projeto 3",
     "PROJECT_3_DESC": "Descrição breve do Projeto 3. Aqui você pode adicionar detalhes sobre o que foi feito.",
-    "REPOSITORY": "Repositório"
+    "REPOSITORY": "Repositório",
+    "contact": {
+    "title": "Vamos nos conectar",
+    "description": "Sinta-se à vontade para entrar em contato para colaborações ou apenas um bate-papo. Estou sempre aberto a novas oportunidades!",
+    "email": "E-mail",
+    "phone": "Telefone"
+  }
   }

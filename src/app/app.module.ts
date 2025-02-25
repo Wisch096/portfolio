@@ -14,6 +14,7 @@ import { ToggleSwitchComponent } from './components/toggle-switch/toggle-switch.
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { PostDetailsComponent } from './pages/post-details/post-details.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -30,6 +31,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProjectsComponent,
     BlogComponent,
     PostDetailsComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

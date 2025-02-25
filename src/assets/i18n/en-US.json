@@ -20,5 +20,11 @@
     "PROJECT_2_DESC": "Brief description of Project 2. Here you can add details about what was done.",
     "PROJECT_3": "Project 3",
     "PROJECT_3_DESC": "Brief description of Project 3. Here you can add details about what was done.",
-    "REPOSITORY": "Repository"
-  }
+    "REPOSITORY": "Repository",
+    "contact": {
+      "title": "Let's Connect",
+      "description": "Feel free to reach out for collaborations or just a friendly chat. I'm always open to new opportunities!",
+      "email": "Email",
+      "phone": "Phone"
+    }
+}
