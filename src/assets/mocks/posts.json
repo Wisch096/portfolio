@@ -17,7 +17,7 @@
         "id": 2,
         "title": {
           "pt-BR": "Post 2",
-          "en": "Post 2"
+          "en-US": "Post 2"
         },
         "content": {
           "pt-BR": "Conteúdo do post 2...",
@@ -38,6 +38,32 @@
         },
         "date": "2023-10-10",
         "image": "../assets/Solid.jpg"
+      },
+      {
+        "id": 4,
+        "title": {
+          "pt-BR": "O que é o OCP? Princípio de Aberto/Fechado",
+          "en-US": "What is OCP? Open/Closed Principle"
+        },
+        "content": {
+          "pt-BR": "🧩 O que é o OCP? O Princípio de Aberto/Fechado afirma que uma classe deve ser aberta para extensão, mas fechada para modificação. Em outras palavras, devemos ser capazes de adicionar novas funcionalidades a uma classe sem alterar seu código existente.\n\n💡 Por que isso é importante? Manter o código fechado para modificação reduz o risco de introduzir novos bugs em partes já testadas e estáveis. Ao mesmo tempo, permitir a extensão através de novas funcionalidades facilita a evolução do software, tornando-o mais adaptável a mudanças e novas necessidades.\n\n🔨 Como aplicar o OCP na prática?\n\n- Uso de Interfaces e Abstrações: Utilize interfaces e classes abstratas para definir comportamentos que podem ser estendidos.\n- Herança e Polimorfismo: Crie novas classes que herdam de classes base e sobrescrevem métodos para adicionar ou modificar comportamentos.\n- Design Patterns: Padrões de projeto como Strategy, Decorator e Factory são excelentes ferramentas para seguir o OCP.\n\n👷 Exemplo:\nImagine que você tem uma classe CalculadoraSalario que calcula o salário de funcionários. Inicialmente, ela só lida com funcionários de tempo integral. Agora, você precisa adicionar o cálculo para funcionários freelancers. Seguindo o OCP, você criaria uma interface ICalculadoraSalario e implementaria duas classes: CalculadoraSalarioTempoIntegral e CalculadoraSalarioFreelancer, cada uma com sua lógica específica.",
+          "en-US": "🧩 What is OCP? The Open/Closed Principle states that a class should be open for extension but closed for modification. In other words, we should be able to add new functionalities to a class without changing its existing code.\n\n💡 Why is this important? Keeping code closed for modification reduces the risk of introducing new bugs into already tested and stable parts. At the same time, allowing extension through new functionalities makes the software more adaptable to changes and new requirements.\n\n🔨 How to apply OCP in practice?\n\n- Use of Interfaces and Abstractions: Use interfaces and abstract classes to define behaviors that can be extended.\n- Inheritance and Polymorphism: Create new classes that inherit from base classes and override methods to add or modify behaviors.\n- Design Patterns: Patterns like Strategy, Decorator, and Factory are excellent tools for following OCP.\n\n👷 Example:\nImagine you have a SalaryCalculator class that calculates employee salaries. Initially, it only handles full-time employees. Now, you need to add calculations for freelancers. Following OCP, you would create an ISalaryCalculator interface and implement two classes: FullTimeSalaryCalculator and FreelancerSalaryCalculator, each with its specific logic."
+        },
+        "date": "2023-10-10",
+        "image": "../assets/Solid2.jpg"
+      },
+      {
+        "id": 5,
+        "title": {
+          "pt-BR": "O mínimo sobre cache que você deveria saber",
+          "en-US": "The Minimum You Should Know About Cache"
+        },
+        "content": {
+          "pt-BR": "💡 💭 O mínimo sobre cache que você deveria saber!\n\nO cache é como uma memória especial para o seu aplicativo. Ele armazena dados frequentemente usados, tornando o acesso mais rápido e eficiente. No mundo do .NET, temos duas formas principais de usar o cache: na memória e distribuído.\n\nCache na Memória 🧠\n\nVantagens:\n- Simplicidade: Implementar o cache na memória é fácil e rápido.\n- Velocidade: Os dados ficam à mão, prontos para uso.\n- Controle: Você pode definir quando os dados expiram e quais são as prioridades.\n\nDesvantagens:\n- Limitado a um Único Servidor: O cache na memória funciona bem para aplicativos em um único servidor, mas não compartilha dados entre servidores.\n- Consumo de Memória: Os dados em cache ocupam espaço na memória do aplicativo.\n\nCache Distribuído 🌐\n\nVantagens:\n- Escalabilidade: Compartilha dados em cache entre várias instâncias de aplicativos ou servidores.\n- Redundância: Mesmo se um servidor falhar, os dados em cache permanecem disponíveis.\n- Flexibilidade: Você pode usar serviços como Redis ou SQL Server para armazenar dados em cache.\n\nDesvantagens:\n- Complexidade: Configurar e gerenciar um cache distribuído pode ser mais complicado.\n- Latência: O acesso aos dados em cache pode ser um pouco mais lento do que na memória local.\n\nEm resumo, escolha a estratégia de cache que melhor se adapta às necessidades do seu aplicativo. O importante é disponibilizar o máximo de performance para o usuário. 😉🚀",
+          "en-US": "💡 💭 The Minimum You Should Know About Cache!\n\nCache is like a special memory for your application. It stores frequently used data, making access faster and more efficient. In the .NET world, we have two main ways to use cache: in-memory and distributed.\n\nIn-Memory Cache 🧠\n\nAdvantages:\n- Simplicity: Implementing in-memory cache is easy and quick.\n- Speed: Data is readily available for use.\n- Control: You can define when data expires and what the priorities are.\n\nDisadvantages:\n- Limited to a Single Server: In-memory cache works well for applications on a single server but does not share data between servers.\n- Memory Consumption: Cached data occupies space in the application's memory.\n\nDistributed Cache 🌐\n\nAdvantages:\n- Scalability: Shares cached data across multiple application instances or servers.\n- Redundancy: Even if one server fails, the cached data remains available.\n- Flexibility: You can use services like Redis or SQL Server to store cached data.\n\nDisadvantages:\n- Complexity: Setting up and managing a distributed cache can be more complicated.\n- Latency: Access to cached data can be slightly slower than local memory.\n\nIn summary, choose the caching strategy that best fits your application's needs. The important thing is to provide maximum performance for the user. 😉🚀"
+        },
+        "date": "2023-10-15",
+        "image": "../assets/cache.jpg"
       }
     ]
   }
