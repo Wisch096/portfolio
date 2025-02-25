@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { DeviceService } from 'src/app/services/device.service';
 import { TranslationService } from 'src/app/services/translation.service';
 
 @Component({
@@ -9,8 +10,12 @@ import { TranslationService } from 'src/app/services/translation.service';
 export class HeaderComponent {
   @Output() themeChanged = new EventEmitter<boolean>();
   isEnglish = false; 
+  isMobile: boolean;
+  isMenuOpen: boolean = false; 
 
-  constructor(private translationService: TranslationService) { }
+  constructor(private translationService: TranslationService, private deviceService: DeviceService) {
+    this.isMobile = this.deviceService.isMobile;
+   }
 
   onThemeChanged(isDarkMode: boolean) {
     this.themeChanged.emit(isDarkMode); 
@@ -21,4 +26,9 @@ export class HeaderComponent {
     let language = isChecked ? 'pt-BR' : 'en-US';
     this.translationService.changeLanguage(language);
   }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+  
 }

@@ -1,14 +1,45 @@
-<nav class="container mx-auto flex items-center justify-between py-4">
+<nav class="container mx-auto flex items-center justify-between py-4 px-4">
   <a href="#" class="text-xl font-bold">wisch.dev</a>
-  <ul class="flex space-x-4">
+
+  <button 
+    class="md:hidden text-gray-500 focus:outline-none" 
+    *ngIf="isMobile"
+    (click)="toggleMenu()"
+  >
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" 
+         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+    </svg>
+  </button>
+
+  <ul class="hidden md:flex space-x-4">
     <li><a href="/blog" class="hover:text-gray-300">{{ 'Blog' | translate }}</a></li>
     <li><a href="#contact" class="hover:text-gray-300">{{ 'CONTACT' | translate }}</a></li>
   </ul>
-  <div class="flex items-center space-x-4">
+
+  <div class="hidden md:flex items-center space-x-4">
     <app-theme-toggle (themeChanged)="onThemeChanged($event)"></app-theme-toggle>
     <app-toggle-switch 
       [checked]="isEnglish" 
       (checkedChange)="onToggleChanged($event)"
     ></app-toggle-switch>
+  </div>
+
+  <div 
+    *ngIf="isMobile && isMenuOpen" 
+    class="absolute top-16 left-0 w-full flex flex-col items-center space-y-4 pb-4 md:hidden transition-all duration-300"
+  >
+    <ul class="flex flex-row space-x-5">
+      <li><a href="/blog" class="hover:text-gray-300 text-lg">{{ 'Blog' | translate }}</a></li>
+      <li><a href="#contact" class="hover:text-gray-300 text-lg">{{ 'CONTACT' | translate }}</a></li>
+    </ul>
+
+    <div class="flex items-center space-x-4">
+      <app-theme-toggle (themeChanged)="onThemeChanged($event)"></app-theme-toggle>
+      <app-toggle-switch 
+        [checked]="isEnglish" 
+        (checkedChange)="onToggleChanged($event)"
+      ></app-toggle-switch>
+    </div>
   </div>
 </nav>
