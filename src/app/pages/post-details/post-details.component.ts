@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BlogComponent } from '../blog/blog.component';
+import { HttpClient } from '@angular/common/http';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-post-details',
@@ -10,11 +11,12 @@ import { BlogComponent } from '../blog/blog.component';
 export class PostDetailsComponent implements OnInit {
   post: any;
 
-  constructor(private route: ActivatedRoute, private blogComponent: BlogComponent) {}
+  constructor(private route: ActivatedRoute, private http: HttpClient, public translate: TranslateService) {}
 
   ngOnInit(): void {
-    let postId = +this.route.snapshot.paramMap.get('id')!;
-    this.post = this.blogComponent.posts.find(p => p.id === postId);
-    console.log("conteudo do post", this.post);
+    const postId = +this.route.snapshot.paramMap.get('id')!;
+    this.http.get<any>('assets/mocks/posts.json').subscribe(data => {
+      this.post = data.posts.find((p: any) => p.id === postId);
+    });
   }
 }
