@@ -11,7 +11,7 @@
           "en-US": "Have you ever encountered code that seemed to do a bit of everything and was hard to maintain? This happens because it probably didn't follow the Single Responsibility Principle, SRP."
         },
         "date": "2023-10-01",
-        "image": "../assets/jababack.jpg"
+        "image": "../assets/Solid.jpg"
       },
       {
         "id": 2,
@@ -24,7 +24,7 @@
           "en-US": "Content of post 2..."
         },
         "date": "2023-10-05",
-        "image": "../assets/jababack.jpg"
+        "image": "../assets/Solid.jpg"
       },
       {
         "id": 3,
@@ -37,7 +37,7 @@
           "en-US": "Have you ever encountered code that seemed to do a bit of everything and was hard to maintain? This happens because it probably didn't follow the Single Responsibility Principle, SRP. 🔍 What is SRP? SRP states that a class should have one, and only one, reason to change. That is, it should have only one well-defined responsibility or purpose. This makes the code more maintainable, testable, and easier to understand. 💡 Why is SRP important? Facilitates Maintenance: Classes with single responsibilities are easier to modify without impacting other parts of the system. Increases Reusability: When classes are focused, they can be reused in different contexts. Improves Testability: Testing small, focused classes is simpler and more effective. 🔧 How to apply SRP in your code? Identify responsibilities: Analyze your classes and determine what responsibilities they are taking on. Separate responsibilities: Divide classes with multiple responsibilities into several smaller classes, each with a clear purpose. Stay focused: Make sure each class has only one reason to change, that is, a single responsibility."
         },
         "date": "2023-10-10",
-        "image": "../assets/jababack.jpg"
+        "image": "../assets/Solid.jpg"
       }
     ]
   }

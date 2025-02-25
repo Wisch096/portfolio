@@ -9,14 +9,21 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./post-details.component.css']
 })
 export class PostDetailsComponent implements OnInit {
-  post: any;
+  post: any = null;
 
-  constructor(private route: ActivatedRoute, private http: HttpClient, public translate: TranslateService) {}
+  constructor(
+    private route: ActivatedRoute,
+    private http: HttpClient,
+    public translate: TranslateService
+  ) {}
 
   ngOnInit(): void {
     const postId = +this.route.snapshot.paramMap.get('id')!;
     this.http.get<any>('assets/mocks/posts.json').subscribe(data => {
       this.post = data.posts.find((p: any) => p.id === postId);
+      if (!this.post) {
+        console.error('Post not found with ID:', postId); 
+      }
     });
   }
 }
