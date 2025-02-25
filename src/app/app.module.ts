@@ -13,6 +13,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ToggleSwitchComponent } from './components/toggle-switch/toggle-switch.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { PostDetailsComponent } from './pages/post-details/post-details.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -28,6 +29,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ToggleSwitchComponent,
     ProjectsComponent,
     BlogComponent,
+    PostDetailsComponent,
   ],
   imports: [
     BrowserModule,
