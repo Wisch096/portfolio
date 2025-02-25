@@ -13,9 +13,10 @@ export class HeaderComponent {
   isMobile: boolean;
   isMenuOpen: boolean = false; 
 
-  constructor(private translationService: TranslationService, private deviceService: DeviceService) {
+  constructor(private translationService: TranslationService,
+    private deviceService: DeviceService) {
     this.isMobile = this.deviceService.isMobile;
-   }
+  }
 
   onThemeChanged(isDarkMode: boolean) {
     this.themeChanged.emit(isDarkMode); 
